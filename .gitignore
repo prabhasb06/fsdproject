@@ -1,0 +1,15 @@
+# Eclipse / Java generated files
+/bin/
+/build/
+/target/
+*.class
+
+# Local environment and IDE state
+.env
+.env.*
+!.env.example
+.metadata/
+
+# OS files
+Thumbs.db
+.DS_Store

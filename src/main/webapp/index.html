@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Salary Management</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 430px;
+            background: white;
+            padding: 32px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4f63c4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Employee Salary</h1>
+
+        <form action="salary-report" method="post">
+            <label>Employee Name</label>
+            <input type="text" name="employeeName" required>
+
+            <label>Monthly Salary</label>
+            <input type="number" name="salary" required>
+
+            <label>Working Days</label>
+            <input type="number" name="workingDays" required>
+
+            <label>Leaves</label>
+            <input type="number" name="leaves" required>
+
+            <label>Hours Per Day</label>
+            <input type="number" name="hoursPerDay" step="0.1" required>
+
+            <button type="submit">Generate Salary Report</button>
+        </form>
+    </div>
+</body>
+</html>
